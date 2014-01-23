@@ -1,4 +1,5 @@
 # Find the Python libraries and headers
+set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${CMAKE_CURRENT_SOURCE_DIR})
 FIND_PACKAGE (PythonLibs)
 if(NOT PYTHON_LIBRARIES)
 	MESSAGE (STATUS "Python libaries not found. Cannot build Python bindings for HokuyoAIST.")
